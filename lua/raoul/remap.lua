@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
--- Search for word under curser in all files
+--  Search for word under curser in all files
 vim.keymap.set('n', '<leader>f', ':lua vim.cmd("execute \'vimgrep /" .. vim.fn.expand("<cword>") .. "/ **/*\'")<CR>:copen<CR>', { noremap = true, silent = true })
 
 -- Switch between terminals
